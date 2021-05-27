@@ -7,11 +7,15 @@ let slicedArr = arr.slice(0, arr.length);
 let clickedArr = [];
 
 arr.map((item) => {
-  const createSection = document.createElement("section");
   item.addEventListener("click", (e) => {
-    item.classList.add("click");
-    iterateMaker(arr);
-    iterateMaker(slicedArr);
+    if (!item.classList.contains("click")) {
+      item.classList.add("click");
+      iterateMaker(arr);
+      iterateMaker(slicedArr);
+    }
+    if (item.classList.contains("click")) {
+      slicedArr.splice(0, slicedArr.length);
+    } // 전체 불러오기.
   });
 });
 
@@ -24,7 +28,6 @@ const iterateMaker = (array) => {
     for (let i = 0; i < array.length; i++) {
       if (array[i].classList.contains("click")) {
         clickedArr = slicedArr.splice(i, 1);
-        console.log(clickedArr);
       }
     }
   }

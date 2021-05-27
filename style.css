@@ -20,46 +20,37 @@ main {
 section {
   position: absolute;
   transition: 1s;
+  transition-timing-function: cubic-bezier(0.68, -1.55, 0.265, 1.65);
+  width: 768px;
+  height: 500px;
 }
 
 section:nth-child(1) {
-  width: 768px;
-  height: 500px;
   background-color: cadetblue;
   z-index: 10;
 }
 
 section:nth-child(2) {
-  width: 768px;
-  height: 500px;
   background-color: rgb(28, 73, 75);
   z-index: 9;
 }
 
 section:nth-child(3) {
-  width: 768px;
-  height: 500px;
   background-color: rgb(12, 104, 209);
   z-index: 8;
 }
 
 section:nth-child(4) {
-  width: 768px;
-  height: 500px;
   background-color: rgb(240, 176, 0);
   z-index: 7;
 }
 
 section:nth-child(5) {
-  width: 768px;
-  height: 500px;
   background-color: rgb(211, 95, 186);
   z-index: 6;
 }
 
 section:nth-child(6) {
-  width: 768px;
-  height: 500px;
   background-color: rgb(245, 124, 10);
   z-index: 5;
 }
