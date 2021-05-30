@@ -37,10 +37,30 @@ arr.map((item) => {
 const clickedMovement = () => {
   clickedArr[0].style.transition = "1.5s";
   clickedArr[0].style.transitionTimingFunction =
-    "cubic-bezier(0.68, -1.55, 0.265, 1.65)";
+    "cubic-bezier(0.58, -1.55, 0.165, 1)";
   clickedArr[0].style.transform = `none`;
   clickedArr[0].style.width = "100%";
   clickedArr[0].style.height = "100%";
+  if (clickedArr[0].classList.contains("red")) {
+    const test = document.querySelector(".svg");
+    test.classList.add("testing");
+    svgStart();
+  }
+  if (clickedArr[0].classList.contains("yellow")) {
+    console.log(2);
+  }
+  if (clickedArr[0].classList.contains("green")) {
+    console.log(3);
+  }
+  if (clickedArr[0].classList.contains("blue")) {
+    console.log(4);
+  }
+  if (clickedArr[0].classList.contains("purple")) {
+    console.log(5);
+  }
+  if (clickedArr[0].classList.contains("violet")) {
+    console.log(6);
+  }
 };
 
 const cssMaker = () => {
