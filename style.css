@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-bg-Color1: rgb(167, 50, 42);
+  --main-bg-Color2: rgb(207, 177, 42);
+  --main-bg-Color3: rgb(77, 161, 38);
+  --main-bg-Color4: rgb(3, 114, 179);
+  --main-bg-Color5: rgb(124, 58, 185);
+  --main-bg-Color6: rgb(48, 8, 100);
+}
+
 body {
   height: 100vh;
   background-color: #232323;
@@ -26,32 +35,32 @@ section {
 }
 
 section:nth-child(1) {
-  background-color: cadetblue;
+  background-color: var(--main-bg-Color1);
   z-index: 10;
 }
 
 section:nth-child(2) {
-  background-color: rgb(28, 73, 75);
+  background-color: var(--main-bg-Color2);
   z-index: 9;
 }
 
 section:nth-child(3) {
-  background-color: rgb(12, 104, 209);
+  background-color: var(--main-bg-Color3);
   z-index: 8;
 }
 
 section:nth-child(4) {
-  background-color: rgb(240, 176, 0);
+  background-color: var(--main-bg-Color4);
   z-index: 7;
 }
 
 section:nth-child(5) {
-  background-color: rgb(211, 95, 186);
+  background-color: var(--main-bg-Color5);
   z-index: 6;
 }
 
 section:nth-child(6) {
-  background-color: rgb(245, 124, 10);
+  background-color: var(--main-bg-Color6);
   z-index: 5;
 }
 
