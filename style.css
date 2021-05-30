@@ -55,6 +55,8 @@ section:nth-child(6) {
   z-index: 5;
 }
 
-section.hover {
-  height: 550px;
+.mouseover {
+  width: 850px;
+  height: 480px;
+  transition: 0.1s;
 }

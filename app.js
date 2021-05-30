@@ -17,6 +17,14 @@ arr.map((item) => {
       slicedArr.splice(0, slicedArr.length);
     } // 전체 불러오기.
   });
+  item.addEventListener("mouseover", (e) => {
+    item.classList.add("mouseover");
+  });
+  item.addEventListener("mouseout", (e) => {
+    if (item.classList.contains("mouseover")) {
+      item.classList.remove("mouseover");
+    }
+  });
 });
 
 const cssMaker = () => {
